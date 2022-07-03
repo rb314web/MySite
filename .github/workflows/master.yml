@@ -13,4 +13,4 @@ jobs:
       with:
         server: dev.marcin.work
         username: marcinwork_radek
-        password: ${{ secrets.ftp_password }}
+        password: Rsu$UkNLH4
