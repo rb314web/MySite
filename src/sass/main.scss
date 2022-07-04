@@ -219,6 +219,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	background-color: rgb(0, 0, 0);
+	overflow: hidden;
 
 	&_social {
 		display: flex;
@@ -340,8 +341,9 @@ body {
         }
 
         textarea{
-            width: 500px;
+            width: 100%;
             padding: 10px;
+			margin: 20px;
             font-size: 1rem;
             color: #fff;
             background: none;
