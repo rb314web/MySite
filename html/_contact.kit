@@ -4,14 +4,15 @@
 			<h2>Kontakt</h2>
 		</div>
 
-		<form>
+		<form id="contactform" action="https://formsubmit.io/send/brzezinskiradek@gmail.com" method="POST">
+			<input name="_redirect" type="hidden" id="name" value="https://radek.dev.marcin.work/email.send.html">
 			<label for="email">Wpisz adres e-mail:</label>
-			<input id="email" type="text" placeholder="Wpisz adres email" />
+			<input name="email" type="email" id="email" type="text" placeholder="Wpisz adres email" />
 
 			<label for="message">Wpisz treść wiadomości:</label>
-			<textarea name="" id="message" cols="30" rows="10"></textarea>
+			<textarea name="comment" id="comment" name="" id="message" cols="30" rows="10"></textarea>
 
-			<button type="submit">Wyślij!</button>
+			<input value="Submit" type="submit">
 		</form>
 	</div>
 </div>

@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+	scroll-padding-top: 80px;
 }
 
 body {
@@ -24,7 +25,8 @@ body {
 }
 
 .title {
-	margin: 100px 0 100px 40px;
+	margin: 50px 0;
+	text-align: center;
 	font-size: 2rem;
 	color: #fff;
 	border-bottom: 3px solid rgb(253, 253, 253);
@@ -223,6 +225,7 @@ body {
 
 	&_social {
 		display: flex;
+		flex-direction: column;
 		font-size: 1rem;
 		color: #fff;
 		border-left: 1px solid #fff;
