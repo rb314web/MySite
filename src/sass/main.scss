@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 	scroll-padding-top: 80px;
 }
 
@@ -29,7 +29,8 @@ body {
 	text-align: center;
 	font-size: 2rem;
 	color: #fff;
-	border-bottom: 3px solid rgb(253, 253, 253);
+	border-bottom: 1px solid rgb(253, 253, 253);
+	text-shadow: 0px 0px 4px white;
 }
 
 // NAVIGATION
@@ -46,7 +47,7 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-        height: 100%;
+		height: 100%;
 		max-width: 1200px;
 		margin: 0 auto;
 	}
@@ -66,7 +67,7 @@ body {
 		padding: 20px;
 		color: #fff;
 		cursor: pointer;
-        z-index: 110;
+		z-index: 110;
 	}
 
 	&_desktop {
@@ -96,19 +97,19 @@ body {
 		left: 0;
 		top: -80px;
 		height: 100vh;
-        width: 200px;
-        margin-top: 80px;
+		width: 200px;
+		margin-top: 80px;
 		background-color: #000;
 		transform: translateX(-500px);
 		z-index: 100;
 		transition: transform 0.3s;
 		z-index: 100;
-        overflow: hidden;
+		overflow: hidden;
 
-        &_item {
-            width: 100%;
-            text-align: center;
-        }
+		&_item {
+			width: 100%;
+			text-align: center;
+		}
 
 		ul {
 			display: flex;
@@ -125,16 +126,14 @@ body {
 				cursor: pointer;
 				transition: transform 0.2s;
 
-                &:last-child {
-                    border-bottom: none;
-                }
+				&:last-child {
+					border-bottom: none;
+				}
 
-
-                a {
-                    color: #fff;
-                }
+				a {
+					color: #fff;
+				}
 			}
-            
 
 			li:hover {
 				transform: scale(1.1);
@@ -234,7 +233,7 @@ body {
 			margin: 20px;
 
 			p {
-				margin: 10px;
+				margin: 20px;
 			}
 			a {
 				color: #fff;
@@ -252,119 +251,102 @@ body {
 //PROJECTS
 
 .projects {
-
-
 	&_boxes {
 		display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
 
 		&_box {
-			position: relative;
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 500px;
-			height: 300px;
-			margin: 20px;
-			color: #fff;
-			border-radius: 10px;
-			text-align: center;
-			font-size: 1.5rem;
-			background-position: center;
-			background-size: 150%;
+			flex-direction: column;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			margin: 100px 0;
 
-			h2 {
-				z-index: 10;
+			&_text {
+				display: flex;
+				margin: 40px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				font-size: 1.5rem;
+
+				h2 {
+					margin: 15px;
+				}
 			}
 
-			&_one {
-				background-image: url('https://cdn.pixabay.com/photo/2022/06/23/09/46/mountain-7279430_960_720.jpg');
-				transition: background-size 0.3s;
-			}
+			&_img{
+				margin: 0 auto;
+				width: 50%;
+				overflow: hidden;
 
-			&_two {
-				background-image: url('https://cdn.pixabay.com/photo/2022/03/01/00/12/tree-7040298_960_720.jpg');
-			}
-			transition: background-size 0.3s;
+				img {
+					width: 100%;
+					transition: transform .5s;
+				}
 
-			&_three {
-				background-image: url('https://cdn.pixabay.com/photo/2022/06/04/11/19/city-7241725_960_720.jpg');
-			}
-			transition: background-size 0.3s;
-			&_four {
-				background-image: url('https://cdn.pixabay.com/photo/2021/12/29/18/28/animal-6902459_960_720.jpg');
-			}
-			transition: background-size 0.3s;
-
-			&_one:hover,
-			&_two:hover,
-			&_three:hover,
-			&_four:hover {
-				background-size: 170%;
-			}
-
-			&_shadow {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0, 0, 0, 0.3);
+				img:hover {
+				transform: scale(1.2);
+				}
 			}
 		}
+
+
 	}
 }
 
 //CONTACT
 
 .contact {
-    
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+		label {
+			padding: 20px;
+			color: #fff;
+			font-size: 1.5rem;
+		}
 
-        label {
-            padding: 20px;
-            color: #fff;
-            font-size: 1.5rem;
-        }
+		input {
+			height: 50px;
+			width: 50%;
+			font-size: 1rem;
+			color: #fff;
+			text-align: center;
+			border: 1px solid white;
+			border-radius: 8px;
+			background: none;
+		}
 
-        input {
-            height: 50px;
-            width: 300px;
-            font-size: 1rem;
-            color: #fff;
-            text-align: center;
-            border: 1px solid white;
-            border-radius: 8px;
-            background: none;
-        }
-
-        textarea{
-            width: 100%;
-            padding: 10px;
+		textarea {
+			width: 50%;
+			padding: 10px;
 			margin: 20px;
-            font-size: 1rem;
-            color: #fff;
-            background: none;
-            border: 1px solid white;
-            border-radius: 8px;
-            resize: vertical;
-        }
+			font-size: 1rem;
+			color: #fff;
+			background: none;
+			border: 1px solid white;
+			border-radius: 8px;
+			resize: vertical;
+		}
 
-        button {
-            margin: 30px;
-            padding: 10px 40px;
-            background: none;
-            color: #fff;
-            border: 1px solid white;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-    }
+		button {
+			margin: 30px;
+			padding: 10px 40px;
+			background: none;
+			color: #fff;
+			border: 1px solid white;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -378,13 +360,20 @@ body {
 		}
 	}
 
-	// .projects {
+	.projects {
 
-	// 	&_boxes {
-	// 		flex-direction: row;
-	// 		flex-wrap: wrap;
-	// 	}
-	// }
+		&_boxes {
+			
+			&_box {
+				flex-direction: row;
+			}
+
+			&_box:nth-child(2n) {
+				flex-direction: row-reverse;
+			}
+
+		}
+	}
 
 	.footer {
 		flex-direction: row;
@@ -408,11 +397,16 @@ body::-webkit-scrollbar-thumb {
 
 .email-send {
 	display: flex;
-	justify-content: center;align-items: center;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 100vh;
 	font-size: 2rem;
 	color: #fff;
-	background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%);
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		180deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(121, 9, 9, 1) 100%
+	);
 }
