@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script
+		src="https://kit.fontawesome.com/a2db2b098d.js"
+		crossorigin="anonymous"
+	></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
+		rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="../dist/css/main.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Web developer | rbrzeinski.pl</title>
+</head>
+
+
+<body>
+    
+	<nav class="navbar">
+		
+		<div class="navbar_wrapper">
+
+			<div class="navbar_logo">
+				<a class="navbar_logo_text" href="#">rbrzezinski.pl</a>
+			</div>
+	
+			<div class="navbar_desktop">
+				<ul>
+					<a href="#"><li class="navbar_desktop_item">Home</li></a>
+					<a href="#projects"><li class="navbar_desktop_item">Projekty</li></a>
+					<a href="https://github.com/rb314web"
+						><li class="navbar_desktop_item">GitHub</li></a
+					>
+					<a href="#contact"><li class="navbar_desktop_item">Kontakt</li></a>
+				</ul>
+			</div>
+	
+			<div class="navbar_bars">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+			
+
+		</div>
+
+	</nav>
+
+	<div class="navbar_mobile">
+		<ul>
+			<li class="navbar_mobile_item"><a href="#">Home</a></li>
+			<li class="navbar_mobile_item"><a href="#projects">Projekty</a></li>
+			<li class="navbar_mobile_item">GitHub</li>
+			<li class="navbar_mobile_item"><a href="#contact">Kontakt</a></li>
+		</ul>
+	</div>
+
+    <div class="hero">
+    <div class="hero_shadow">
+
+    </div>
+
+    <div  class="hero_text">
+        <h1 data-aos="fade-up"
+        data-aos-duration="1000">Lorem ipsum dolor sit amet.</h1>
+        <p data-aos="fade-up"
+     data-aos-duration="1200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, suscipit.</p>
+     <a href="#projects"><button class="hero_text_button" data-aos="fade-up"
+        data-aos-duration="1300">Zobacz moje projekty!</button></a>
+    </div>
+</div>
+    <div class="wrapper">
+<div id="projects" class="projects">
+	<div class="title">
+		<h2>Moje projekty</h2>
+	</div>
+
+	<div class="projects_boxes">
+		
+
+		<div class="projects_boxes_box">
+
+			<div class="projects_boxes_box_text">
+
+				<h2>Nazwa projektu</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, possimus.</p>
+
+			</div>
+
+			<div class="projects_boxes_box_img">
+				<img src="https://picsum.photos/500/500" alt="Random images">
+			</div>
+
+		</div>
+		<div class="projects_boxes_box">
+
+			<div class="projects_boxes_box_text">
+
+				<h2>Nazwa projektu</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, possimus.</p>
+
+			</div>
+
+			<div class="projects_boxes_box_img">
+				<img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_960_720.jpg" alt="Random images">
+			</div>
+
+		</div>
+		<div class="projects_boxes_box">
+
+			<div class="projects_boxes_box_text">
+
+				<h2>Nazwa projektu</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, possimus.</p>
+
+			</div>
+
+			<div class="projects_boxes_box_img">
+				<img src="https://cdn.pixabay.com/photo/2014/01/04/12/34/road-238458_960_720.jpg" alt="Random images">
+			</div>
+
+		</div>
+		<div class="projects_boxes_box">
+
+			<div class="projects_boxes_box_text">
+
+				<h2>Nazwa projektu</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, possimus.</p>
+
+			</div>
+
+			<div class="projects_boxes_box_img">
+				<img src="https://cdn.pixabay.com/photo/2020/03/24/20/59/car-4965498_960_720.jpg" alt="Random images">
+			</div>
+
+		</div>
+		<div class="projects_boxes_box">
+
+			<div class="projects_boxes_box_text">
+
+				<h2>Nazwa projektu</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, possimus.</p>
+
+			</div>
+
+			<div class="projects_boxes_box_img">
+				<img src="https://cdn.pixabay.com/photo/2022/07/01/17/58/lighthouse-7296029_960_720.jpg" alt="Random images">
+			</div>
+
+		</div>
+		
+		
+		
+
+		
+
+	</div>
+</div>
+</div>
+    <div class="wrapper">
+	<div id="contact" class="contact">
+		<div class="title">
+			<h2>Kontakt</h2>
+		</div>
+
+		<form id="contactform" action="https://formsubmit.io/send/brzezinskiradek@gmail.com" method="POST">
+			<input name="_redirect" type="hidden" id="name" value="https://radek.dev.marcin.work/email-send.html">
+			<label for="email">Wpisz adres e-mail:</label>
+			<input name="email" type="email" id="email" type="text" placeholder="Wpisz adres email" />
+
+			<label for="message">Wpisz treść wiadomości:</label>
+			<textarea name="comment" id="comment" name="" id="message" cols="30" rows="10"></textarea>
+
+			<!-- <input value="Wyślij" type="submit"> -->
+			<button type="submit">Wyślij</button>
+		</form>
+	</div>
+</div>
+
+    <div class="footer">
+
+    <div class="footer_logo">rbrzezinski.pl</div>
+
+    <div class="footer_social">
+        <div class="footer_social_box">  
+            <p><i class="fa-solid fa-envelope"></i> E-mail:</p>
+            <p><a href = "mailto: brzezinskiradek@gmail.com">brzezinskiradek@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> Phone:</p>
+            <p><a href="tel:659 854 785">659 854 785</a></p>
+            <p><i class="fa-brands fa-github"></i> GitHub:</p>
+            <p><a href="https://github.com/rb314web">https://github.com/rb314web</a></p>
+        </div>
+
+
+    </div>
+</div>
+    <div class="scrolltop">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../dist/js/main.min.js"></script>
+</body>
+</html>
